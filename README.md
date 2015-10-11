@@ -1,4 +1,4 @@
-# es6-boilerplate:
+# es6-boilerplate
 Boilerplate for authoring in ES6 and publishing in ES5.
 
 ## Scripts
@@ -17,4 +17,22 @@ available via `npm run-script`:
     mocha --watch --compilers js:espower-babel/guess test/*.js
   lint
     eslint src test
+```
+
+## How to use
+```sh
+# start new project from boilerplate
+$ git clone --depth 1 git@github.com:tsuchikazu/es6-boilerplate.git new-project
+$ cd new-project/
+$ rm -rf .git
+$ git init
+$ git add .
+$ git commit -m 'Initial Commit'
+$ hub create -d 'Description for new-project'
+$ git push
+
+# edit for new project
+$ sed -i -e "s/es6-boilerplate/new-project/g" README.md package.json
+$ vim package.json
+...
 ```
